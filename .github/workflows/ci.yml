@@ -48,5 +48,5 @@ jobs:
       run: dotnet build --configuration CI
 
     - name: Test
-      if: ${{ env.test == 'true' }}
+      if: ${{ env.Test == 'true' }}
       run: dotnet test --no-restore --verbosity normal
