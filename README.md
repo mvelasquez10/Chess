@@ -11,7 +11,7 @@ A simple chess game with a desktop interface to demonstrate the "clean code" pra
 
 ## Installation
 
-Install my-project with npm
+Install this project with dotnet
 
 ```bash
   dotnet restore .
