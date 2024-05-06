@@ -10,16 +10,18 @@ jobs:
   greeting:    
     runs-on: ubuntu-latest
 
-    environment: dev
+    environment: qa
 
     steps:
       - name: Greeting
-        run: echo "$REPO ${{ vars.HELLO }} ${{ secrets.KEY }}"
+        run: echo "${{ vars.REPO }} ${{ vars.HELLO }} ${{ secrets.KEY }}"
 
   #Job1
   build:
     #Runner
     runs-on: ubuntu-latest
+
+    needs: greeting
 
     #Steps
     steps:
