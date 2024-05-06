@@ -68,7 +68,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Chess.Engine\Chess.Engine.csproj" />
-    <ProjectReference Include="..\Chess.Repository.EventStoreDB\Chess.Repository.File.csproj" />
   </ItemGroup>
 
 </Project>
