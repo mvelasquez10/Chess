@@ -4,6 +4,7 @@ name: .NET Core CI
 #Events
 on: 
     push:
+    workflow_dispatch: 
 
 jobs:
   #Job1
