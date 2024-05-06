@@ -7,6 +7,15 @@ on:
     workflow_dispatch: 
 
 jobs:
+  greeting:    
+    runs-on: ubuntu-latest
+
+    environment: dev
+
+    steps:
+      - name: Greeting
+        run: echo "$REPO ${{ vars.HELLO }} ${{ secrets.KEY }}"
+
   #Job1
   build:
     #Runner
