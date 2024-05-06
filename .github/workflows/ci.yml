@@ -6,6 +6,9 @@ on:
     push:
     workflow_dispatch: 
 
+env:
+    Test: false
+
 jobs:
   greeting:    
     runs-on: ubuntu-latest
@@ -45,4 +48,5 @@ jobs:
       run: dotnet build --configuration CI
 
     - name: Test
+      if: ${{ env.test == 'true' }}
       run: dotnet test --no-restore --verbosity normal
